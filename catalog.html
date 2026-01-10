@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Цветочный Рай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🌸 Цветочный Рай</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="#" class="cart-link" id="cartLink">🛒 Корзина (<span id="cartCount">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <h1>Наш каталог</h1>
+                <p>Широкий выбор свежих цветов и букетов на любой вкус</p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">🌹</div>
+                        <h3>Букет из роз</h3>
+                        <p>Классический букет из красных роз</p>
+                        <div class="product-price">2500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Букет из роз" data-price="2500">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌷</div>
+                        <h3>Весенние тюльпаны</h3>
+                        <p>Нежный букет из свежих тюльпанов</p>
+                        <div class="product-price">1800 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Весенние тюльпаны" data-price="1800">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌻</div>
+                        <h3>Солнечные подсолнухи</h3>
+                        <p>Яркий букет для хорошего настроения</p>
+                        <div class="product-price">2000 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Солнечные подсолнухи" data-price="2000">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🏵️</div>
+                        <h3>Пионы премиум</h3>
+                        <p>Роскошные пионы розового цвета</p>
+                        <div class="product-price">3200 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Пионы премиум" data-price="3200">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌺</div>
+                        <h3>Экзотический микс</h3>
+                        <p>Букет из экзотических цветов</p>
+                        <div class="product-price">4500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Экзотический микс" data-price="4500">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">💐</div>
+                        <h3>Нежность</h3>
+                        <p>Букет в пастельных тонах</p>
+                        <div class="product-price">2800 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Нежность" data-price="2800">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌼</div>
+                        <h3>Полевые цветы</h3>
+                        <p>Свежий букет полевых цветов</p>
+                        <div class="product-price">1500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Полевые цветы" data-price="1500">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🥀</div>
+                        <h3>Винтажный шарм</h3>
+                        <p>Букет в винтажном стиле</p>
+                        <div class="product-price">3500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Винтажный шарм" data-price="3500">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌸</div>
+                        <h3>Сакура</h3>
+                        <p>Нежные ветки цветущей сакуры</p>
+                        <div class="product-price">2700 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Сакура" data-price="2700">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌿</div>
+                        <h3>Зеленая свежесть</h3>
+                        <p>Композиция с зелеными растениями</p>
+                        <div class="product-price">2200 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Зеленая свежесть" data-price="2200">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🌹</div>
+                        <h3>101 роза</h3>
+                        <p>Роскошный букет из 101 розы</p>
+                        <div class="product-price">9500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="101 роза" data-price="9500">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">🪻</div>
+                        <h3>Лаванда</h3>
+                        <p>Ароматная лаванда в букете</p>
+                        <div class="product-price">1900 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Лаванда" data-price="1900">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Цветочный Рай - ваш надежный партнер в мире цветов</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (495) 123-45-67</p>
+                    <p>Email: info@flowerparadise.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Вс: 8:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Цветочный Рай. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

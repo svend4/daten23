@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Цветочный Рай</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .catalog-hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .catalog-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .catalog-section {
+            padding: 60px 20px;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .map-container {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .map-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🌸 Цветочный Рай</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                    <li><a href="#" class="cart-link" id="cartLink">🛒 Корзина (<span id="cartCount">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами удобным способом</p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+
+                        <div class="contact-item">
+                            <h3>📍 Адрес</h3>
+                            <p>г. Москва, ул. Цветочная, д. 15<br>
+                            Метро "Парк Культуры"</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>📞 Телефон</h3>
+                            <p>+7 (495) 123-45-67<br>
+                            +7 (495) 123-45-68</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>info@flowerparadise.ru<br>
+                            orders@flowerparadise.ru</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🕒 Режим работы</h3>
+                            <p>Понедельник - Воскресенье<br>
+                            8:00 - 22:00<br>
+                            Без выходных</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>💬 Социальные сети</h3>
+                            <p>Instagram: @flowerparadise<br>
+                            VK: vk.com/flowerparadise<br>
+                            Telegram: @flowerparadise_bot</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Напишите нам</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h2 style="margin-bottom: 1.5rem;">Как нас найти</h2>
+                    <div class="map-placeholder">
+                        🗺️
+                    </div>
+                    <p style="margin-top: 1rem; color: #666;">
+                        Мы находимся в центре Москвы, в 5 минутах ходьбы от метро "Парк Культуры"
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Цветочный Рай - ваш надежный партнер в мире цветов</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (495) 123-45-67</p>
+                    <p>Email: info@flowerparadise.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Вс: 8:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Цветочный Рай. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

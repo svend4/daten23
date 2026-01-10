@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный Рай - Магазин свежих цветов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🌸 Цветочный Рай</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="#" class="cart-link" id="cartLink">🛒 Корзина (<span id="cartCount">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Свежие цветы для особых моментов</h2>
+                <p>Создаем незабываемые букеты для ваших близких</p>
+                <a href="catalog.html" class="btn btn-primary">Посмотреть каталог</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Почему выбирают нас</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌹</div>
+                        <h3>Свежие цветы</h3>
+                        <p>Только свежие цветы от лучших поставщиков</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставим ваш заказ в течение 2-4 часов</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💐</div>
+                        <h3>Индивидуальный подход</h3>
+                        <p>Создадим букет по вашим пожеланиям</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💯</div>
+                        <h3>Гарантия качества</h3>
+                        <p>100% гарантия свежести и качества</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <div class="container">
+                <h2>Популярные букеты</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">🌹</div>
+                        <h3>Букет из роз</h3>
+                        <p>Классический букет из красных роз</p>
+                        <div class="product-price">2500 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Букет из роз" data-price="2500">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌷</div>
+                        <h3>Весенние тюльпаны</h3>
+                        <p>Нежный букет из свежих тюльпанов</p>
+                        <div class="product-price">1800 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Весенние тюльпаны" data-price="1800">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌻</div>
+                        <h3>Солнечные подсолнухи</h3>
+                        <p>Яркий букет для хорошего настроения</p>
+                        <div class="product-price">2000 ₽</div>
+                        <button class="btn btn-secondary add-to-cart" data-name="Солнечные подсолнухи" data-price="2000">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Цветочный Рай - ваш надежный партнер в мире цветов</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (495) 123-45-67</p>
+                    <p>Email: info@flowerparadise.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <p>Пн-Вс: 8:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Цветочный Рай. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
